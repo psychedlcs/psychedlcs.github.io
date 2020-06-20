@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="博客搭建记录用GitHub+Hexo搭建博客的一个流程记录。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客搭建记录">
+<meta property="og:url" content="http://yoursite.com/2020/05/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/index.html">
+<meta property="og:site_name" content="RESISTANCE">
+<meta property="og:description" content="博客搭建记录用GitHub+Hexo搭建博客的一个流程记录。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-20T04:53:48.000Z">
+<meta property="article:modified_time" content="2020-05-27T07:01:28.859Z">
+<meta property="article:author" content="Psyche">
+<meta property="article:tag" content="博客">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/2020/05/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>博客搭建记录 | RESISTANCE</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">RESISTANCE</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+      <meta itemprop="name" content="Psyche">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RESISTANCE">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          博客搭建记录
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-20 12:53:48" itemprop="dateCreated datePublished" datetime="2020-05-20T12:53:48+08:00">2020-05-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-27 15:01:28" itemprop="dateModified" datetime="2020-05-27T15:01:28+08:00">2020-05-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9D%82%E8%B0%88/" itemprop="url" rel="index"><span itemprop="name">杂谈</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="博客搭建记录"><a href="#博客搭建记录" class="headerlink" title="博客搭建记录"></a>博客搭建记录</h2><p>用GitHub+Hexo搭建博客的一个流程记录。</p>
+<hr>
+<a id="more"></a>
+
+<h3 id="1-建站原因"><a href="#1-建站原因" class="headerlink" title="1. 建站原因"></a>1. 建站原因</h3><p>过去两年里我由于专业&amp;兴趣爱好&amp;工作需求码了很多字，并察觉到我非常喜欢回看自己写的东西，但是似乎没有做过任何像样的学习笔记（除了高中数学和Fundamentals of Phonology，因为老师要检查……真是感谢两位老师……）</p>
+<p>最近刚好回坑ron2需要写点笔记，加上马上要去读书，遂决定建立一个站点培养笔记习惯。</p>
+<h4 id="可能会有的内容"><a href="#可能会有的内容" class="headerlink" title="可能会有的内容"></a>可能会有的内容</h4><ul>
+<li>麻雀（ron2复盘，牌谱学习，观战记，杂谈，etc.）</li>
+<li>专业相关 (marketing, communication, second language acquisition, pragmatics, etc.)</li>
+<li>课堂笔记</li>
+<li>翻译（书籍&amp;文章）</li>
+</ul>
+<h4 id="需要的功能"><a href="#需要的功能" class="headerlink" title="需要的功能"></a>需要的功能</h4><ul>
+<li>界面不能太难看（颜控的基本素质）</li>
+<li>多端同步阅读/编辑</li>
+<li>分版块加密（因为可能会上传有版权限制的东西内容，退而求其次也需要分文章加密）</li>
+<li>防搜索（非必需，估计很少人搜得到）</li>
+</ul>
+<h4 id="否决了以下方案："><a href="#否决了以下方案：" class="headerlink" title="否决了以下方案："></a>否决了以下方案：</h4><ul>
+<li>各种本地笔记（Zine、有道云等）：<strong>多端同步阅读</strong>不便，经常容易戳到编辑按钮。另外我总觉得一个东西不发布出去就不算写完……</li>
+<li>Lofter：搭建方便，子博客可加密，诸方面功能都比较合适。然而：①有被莫名炸号的经历，投诉起来非常麻烦；②自我河蟹功能完善，敏感词很多。</li>
+<li>WordPress：加载慢。不优化的样式实在太难看了……优化起来又非常麻烦，那个模块编辑器难用到窒息。</li>
+<li>Alice+：为数不多可以实现分版块加密的网站平台，建设也比较方便。但是广告太多。而且我总觉得它下一秒就要倒闭的样子……</li>
+</ul>
+<hr>
+<h3 id="2-目前执行方式"><a href="#2-目前执行方式" class="headerlink" title="2. 目前执行方式"></a>2. 目前执行方式</h3><p><strong>GitHub + Hexo</strong>：样式还OK。搭建过程没有想象中的麻烦。大概也许没有分版块加密功能，不过可以实现文章加密，姑且应急一用。</p>
+<h4 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h4><p>目前使用<strong>有道云笔记</strong>。优势如下：</p>
+<ul>
+<li>可多端同步编辑。Windows端可直接导出md文件。</li>
+<li>可自动实现备份功能。同时撰写文章可以自动保存，不太需要担心数据丢失。</li>
+<li>可直接作为图床使用。假设这个功能哪天被端了，也大概可以通过简单的氪金来解锁。</li>
+<li>颜值高。Markdown编辑器半可视化，甚至还有主题可以选。</li>
+</ul>
+<p>辅助程序：<strong>Typora</strong>，用于Hexo相关md文件的修改和优化。</p>
+<h4 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h4><p>现在买域名似乎都要备案，除了更有排面以外似乎也没什么实际意义，遂暂时不买。不过随时可以搞一个就是了。</p>
+<hr>
+<h3 id="3-残留问题"><a href="#3-残留问题" class="headerlink" title="3. 残留问题"></a>3. 残留问题</h3><ul>
+<li><strong>系统同步</strong>：不远的将来很可能要换电脑，加上近期很可能会使用Mac OS进行编辑，需要研究一下本地内容如何同步。应该不难就是了。</li>
+<li><strong>防搜索</strong>：防止主流搜索引擎抓取。印象中可以通过比较简单的代码实现。我感觉大部分程序员老哥们都迫不及待地想把自己的博客推广出去……</li>
+<li><strong>存续情况</strong>：暂且不清楚GitHub托管对容量/时长等方面的限制。需要了解一下。不过无论如何Hexo还是比较好用的，如果今后有需求会考虑虚拟机/域名等等。</li>
+</ul>
+<hr>
+<p>End.</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"># 博客</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/05/23/%E5%9C%A8%E7%90%86%E6%83%B3%E5%92%8C%E7%95%8C%E9%99%90%E4%B8%AD%E8%BF%9B%E5%8C%96%E7%9A%84%E7%8E%8B%E9%81%93/" rel="next" title="在理想和界限中进化的王道">
+      在理想和界限中进化的王道 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#博客搭建记录"><span class="nav-number">1.</span> <span class="nav-text">博客搭建记录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-建站原因"><span class="nav-number">1.1.</span> <span class="nav-text">1. 建站原因</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#可能会有的内容"><span class="nav-number">1.1.1.</span> <span class="nav-text">可能会有的内容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#需要的功能"><span class="nav-number">1.1.2.</span> <span class="nav-text">需要的功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#否决了以下方案："><span class="nav-number">1.1.3.</span> <span class="nav-text">否决了以下方案：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-目前执行方式"><span class="nav-number">1.2.</span> <span class="nav-text">2. 目前执行方式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Markdown"><span class="nav-number">1.2.1.</span> <span class="nav-text">Markdown</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#域名"><span class="nav-number">1.2.2.</span> <span class="nav-text">域名</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-残留问题"><span class="nav-number">1.3.</span> <span class="nav-text">3. 残留问题</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Psyche"
+      src="/uploads/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Psyche</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Psyche</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
