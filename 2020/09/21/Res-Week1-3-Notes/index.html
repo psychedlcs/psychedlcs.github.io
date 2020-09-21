@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="Research method 前3周的Review笔记，重看思路会清晰一些。  Week1intuition-based hypothesis: 直觉基准理论 e.g. 相似的人互相吸引；互补理论； derived from: conventional belief, personal experience, authority measure variables Byrne &amp; Nel">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Res Week1-3 Notes">
+<meta property="og:url" content="http://yoursite.com/2020/09/21/Res-Week1-3-Notes/index.html">
+<meta property="og:site_name" content="RESISTANCE">
+<meta property="og:description" content="Research method 前3周的Review笔记，重看思路会清晰一些。  Week1intuition-based hypothesis: 直觉基准理论 e.g. 相似的人互相吸引；互补理论； derived from: conventional belief, personal experience, authority measure variables Byrne &amp; Nel">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-09-21T06:19:08.000Z">
+<meta property="article:modified_time" content="2020-09-21T06:20:48.676Z">
+<meta property="article:author" content="Psyche">
+<meta property="article:tag" content="Res">
+<meta property="article:tag" content="新媒体">
+<meta property="article:tag" content="研究">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/2020/09/21/Res-Week1-3-Notes/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Res Week1-3 Notes | RESISTANCE</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">RESISTANCE</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/09/21/Res-Week1-3-Notes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+      <meta itemprop="name" content="Psyche">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RESISTANCE">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Res Week1-3 Notes
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-09-21 14:19:08 / 修改时间：14:20:48" itemprop="dateCreated datePublished" datetime="2020-09-21T14:19:08+08:00">2020-09-21</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">课堂笔记</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>Research method 前3周的Review笔记，重看思路会清晰一些。</p>
+<hr>
+<h2 id="Week1"><a href="#Week1" class="headerlink" title="Week1"></a>Week1</h2><p>intuition-based hypothesis: 直觉基准理论 e.g. 相似的人互相吸引；互补理论；</p>
+<p>derived from: conventional belief, personal experience, authority</p>
+<p><strong>measure variables</strong></p>
+<p>Byrne &amp; Nelson (1965)</p>
+<p>IV: similarity of attitudes </p>
+<p>DV: perceived attractiveness</p>
+<hr>
+<p>confounders: 同时影响IV和DV的因素 (mediator)</p>
+<hr>
+<p>![image-20200920211217151](D:\Blog Files\images2\image-20200920211217151.png)</p>
+<h5 id="concept-（概念）"><a href="#concept-（概念）" class="headerlink" title="concept: （概念）"></a>concept: （概念）</h5><ul>
+<li>the abstract representation of a phenomenon </li>
+<li>the smallest element in a theory</li>
+</ul>
+<h5 id="construct-（观念，由概念构成）"><a href="#construct-（观念，由概念构成）" class="headerlink" title="construct: （观念，由概念构成）"></a>construct: （观念，由概念构成）</h5><p>construct of love: 3 sub concepts: intimacy &amp; commitment &amp; passion </p>
+<h5 id="relationship-（关系）"><a href="#relationship-（关系）" class="headerlink" title="relationship: （关系）"></a>relationship: （关系）</h5><p>structural connection between concept 概念之间的<strong>结构关系</strong></p>
+<p>包括：</p>
+<ol>
+<li>the nature (correlational, casual)</li>
+<li>the form (linear, otherwise)</li>
+<li>direction (positive, negative)</li>
+<li>strength (strong, modest)</li>
+</ol>
+<h5 id="theory-（理论）"><a href="#theory-（理论）" class="headerlink" title="theory: （理论）"></a>theory: （理论）</h5><ul>
+<li>specify relationships among <strong>concepts</strong></li>
+<li>explain the causes</li>
+<li>predict the consequences</li>
+</ul>
+<h5 id="variable-（变量）"><a href="#variable-（变量）" class="headerlink" title="variable: （变量）"></a>variable: （变量）</h5><p>vary; 抽象的concept的具体化; 不等于concept</p>
+<p><strong>theory是concept的关系 hypothesis是variable的关系</strong></p>
+<hr>
+<h4 id="hypothesis"><a href="#hypothesis" class="headerlink" title="hypothesis"></a>hypothesis</h4><p>propose: specific, significant, testable &amp; falsifiable, operational/measurable</p>
+<p>wording: </p>
+<ul>
+<li>○○○ will have higher/lower than ○○○</li>
+<li>There will be a positive/negative relationship between ○○○ and ○○○</li>
+<li>As ○○○ increases/decreases, ○○○ will increase/decrease</li>
+</ul>
+<h5 id="Alternative-H-Ha"><a href="#Alternative-H-Ha" class="headerlink" title="Alternative H: Ha"></a>Alternative H: Ha</h5><p>the statement we derive to describe a phenomenon</p>
+<h5 id="Null-H-H0"><a href="#Null-H-H0" class="headerlink" title="Null H: H0"></a>Null H: H0</h5><p>The statement that is opposite to Ha（Ha的反命题）</p>
+<p>有且仅有一个正确</p>
+<hr>
+<p>不够肯定的时候可以用</p>
+<h4 id="Research-Questions"><a href="#Research-Questions" class="headerlink" title="Research Questions"></a>Research Questions</h4><h5 id="3-types-of-research-questions"><a href="#3-types-of-research-questions" class="headerlink" title="3 types of research questions:"></a>3 types of research questions:</h5><ol>
+<li>descriptions （了解一个情况）e.g. how frequently…?</li>
+<li>explanations （理解关系）e.g. are … related to ?</li>
+<li>explorations （探索未知事物）e.g. what do people like and dislike about …?</li>
+</ol>
+<p>hypotheses和research questions的区别：</p>
+<ol>
+<li>是statement不是question</li>
+<li>明确relationship between variables</li>
+<li>logical and consistent with existing theory or literature</li>
+</ol>
+<hr>
+<h4 id="Theory"><a href="#Theory" class="headerlink" title="Theory"></a>Theory</h4><p>![image-20200920221440049](D:\Blog Files\images2\image-20200920221440049.png)</p>
+<p>how to come up with theory: inductive &amp; deductive reasoning</p>
+<h5 id="deductive-演绎法"><a href="#deductive-演绎法" class="headerlink" title="deductive: 演绎法"></a>deductive: 演绎法</h5><p>从广泛到具体；先预测再观察；从上到下</p>
+<h5 id="inductive-归纳法"><a href="#inductive-归纳法" class="headerlink" title="inductive: 归纳法"></a>inductive: 归纳法</h5><p>从具体到广泛；先观察再预测；从下到上</p>
+<p>![image-20200920222519676](D:\Blog Files\images2\image-20200920222519676.png)</p>
+<p>G→T→H→O （左下角是inductive，右上角是deductive)</p>
+<hr>
+<p>correlation: 相关 （同时发生）</p>
+<p>causation: 因果 （先后发生）</p>
+<p>confounder也是同时发生</p>
+<h2 id="Week2"><a href="#Week2" class="headerlink" title="Week2"></a>Week2</h2><h4 id="Qualitative-Research-Method"><a href="#Qualitative-Research-Method" class="headerlink" title="Qualitative Research Method"></a>Qualitative Research Method</h4><p>use: 未探索的内容、新产品（无法直接得出）</p>
+<p>认为researchers’ control may distort the inquiry </p>
+<p>seek to gather in-depth, holistic (整体主义的) understanding of human experience in <strong>natural settings</strong></p>
+<p>![image-20200921083112037](D:\Blog Files\images2\image-20200921083112037.png)</p>
+<p>3 types:</p>
+<ul>
+<li><p>field observation (去当地现场调查) </p>
+<p>应用：ethnography（人种论）关注客体 </p>
+<p>好处：自然环境下获得丰富资料</p>
+<p>坏处：weak generalizability；researcher主观；太贵了</p>
+</li>
+<li><p>focus group（人群研究）</p>
+<p>gather preliminary info., by questionnaire</p>
+<p>应用：marketing and other applied settings</p>
+<p>好处：获得；比采访个人容易</p>
+<p>坏处：weak generalizability；moderator主观</p>
+</li>
+<li><p>in-depth interview</p>
+<p>a single respondent uncover things</p>
+<p>应用：动机、思想等抽象想法，适合敏感话题</p>
+<p>好处：详细观察、获得非口头或书面反馈</p>
+<p>坏处：weak generalizability；researcher主观；不好分析data</p>
+</li>
+</ul>
+<hr>
+<h4 id="Quantitative-Methods"><a href="#Quantitative-Methods" class="headerlink" title="Quantitative Methods"></a>Quantitative Methods</h4><p>3 types:</p>
+<ul>
+<li><p>survey</p>
+<p>statistical analysis of responses to questions</p>
+<p>应用：censuses（人口普查）opinion poll（民意调查）</p>
+<p>好处：有理有据、信息（variables）多</p>
+<p>坏处：难定因果关系；自评的偏差（记忆错误、socially desirable answers)</p>
+</li>
+<li><p>experiment</p>
+<p>researcher (1) takes action, (2) observers the consequences in order to <strong>examine cause and effect relationships</strong> between IV &amp; DV（因果关系）</p>
+<p>应用：心理学、media effect等, <strong>best at isolating short-term effects</strong></p>
+<p>好处：可定因果关系；解释大于描述</p>
+<p>坏处：变量少；人工环境（知道自己在被实验）；limited external generalizability</p>
+</li>
+<li><p>content analysis</p>
+<p>systematic analysis of media texts, programs, etc.</p>
+<p>(语料库分析) by decoding</p>
+<p>应用：communication content, real-world</p>
+<p>好处：系统性；可靠</p>
+<p>坏处：不能学习media effects；coding scheme决定；费时间</p>
+</li>
+</ul>
+<h2 id="Week3"><a href="#Week3" class="headerlink" title="Week3"></a>Week3</h2><h5 id="Population"><a href="#Population" class="headerlink" title="Population:"></a>Population:</h5><p>the entire set of people (总体)</p>
+<h5 id="Census"><a href="#Census" class="headerlink" title="Census:"></a>Census:</h5><p>to study every member of the population (普查)</p>
+<h5 id="sample"><a href="#sample" class="headerlink" title="sample:"></a>sample:</h5><p>a subset of the population that is chosen to represent the population (样本)</p>
+<h5 id="sampling"><a href="#sampling" class="headerlink" title="sampling:"></a>sampling:</h5><p>the process by which samples are selected from the study population (抽样)</p>
+<hr>
+<p>Goals:</p>
+<ul>
+<li>Representativeness: similar to the population in all aspects relevant to the research</li>
+<li>Generalization: can apply to a larger group of obtained data\</li>
+</ul>
+<p>只需要看关键属性是否representative</p>
+<hr>
+<ul>
+<li>sampling unit 抽样单元: smallest element in the population (e.g. 对家庭的研究中，一个家庭就是Unit)</li>
+<li>sample size 样本量: the number of cases in the complete sample  </li>
+<li>sampling frame 样本框: a complete list of all units of the population</li>
+</ul>
+<p>2 types:</p>
+<ul>
+<li>probability sampling (随机抽样)</li>
+<li>non-probability sampling (非随机抽样)</li>
+</ul>
+<hr>
+<h4 id="non-probability-sampling"><a href="#non-probability-sampling" class="headerlink" title="non-probability sampling"></a>non-probability sampling</h4><ol>
+<li><p>convenience sampling (便利抽样) </p>
+<p>适用于其他方法都不能用的时候；方便快捷；不够有代表性；</p>
+</li>
+<li><p>quota sampling (配额抽样)</p>
+<p>sample collected with characteristics of a given cell, and each group is assigned a weight by their portion</p>
+<p>事先按某属性分组，按unit数比例分配</p>
+<p>条件：<strong>必须知道population总数</strong>；不好分组；需要用力控制变量</p>
+</li>
+<li><p>snowball sampling (滚雪球抽样)</p>
+<p>一个分发给其他人</p>
+<p>条件：人群不大；互相熟悉；适用于不知道whole population时；但人多需要的工作大，联系不到孤立的样本</p>
+</li>
+<li><p>volunteer sampling (自愿者抽样)</p>
+<p>只用volunteer</p>
+<p>仅在很多population volunteer的时候；不需要分组；最大的问题是volunteer是谁，比如早来晚来会有属性差异</p>
+</li>
+</ol>
+<hr>
+<h4 id="Probability-Sampling-Methods"><a href="#Probability-Sampling-Methods" class="headerlink" title="Probability Sampling Methods"></a>Probability Sampling Methods</h4><ol>
+<li><p>Simple Random Sampling (简单随机抽样)</p>
+<p>listed in fashion (e.g. 数字) 然后随机抽取</p>
+</li>
+<li><p>Systematic/Sequential Random Sampling (系统随机抽样)</p>
+<p>随意选一个起点，按顺序选取</p>
+<p>1和2条件：<strong>必须知道population总数</strong>；比随机抽样的样本数少；不一定有representativeness，实际上样本越大越有代表性</p>
+</li>
+<li><p>Stratified Random Sampling (分层抽样)</p>
+<p>先分组再随机抽样</p>
+<p>条件：<strong>必须知道population总数</strong>；更有代表性、好控制；分组涉及主观选择</p>
+</li>
+<li><p>Cluster Sampling (群集抽样)</p>
+<p>clusters: city blocks, classes at a university, etc. </p>
+<p>群体中的每个成员都是example</p>
+<p>可能会涉及到多阶段抽样（如：某楼→某层→某间）</p>
+<p>条件：适用于不知道whole population，但知道组别时；效率高；不如随机和分层抽样准确</p>
+</li>
+<li><p>Random Digit Dialing (RDD)</p>
+<p>根据某区域内电话号随机选择</p>
+<p>条件：适用于不知道whole population；效率高；可能会根据phone占有率有偏差</p>
+</li>
+</ol>
+<p>![img](D:\Blog Files\images2\B1_65S975R}DG%3M9_B5WSP.png)</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Res/" rel="tag"># Res</a>
+              <a href="/tags/%E6%96%B0%E5%AA%92%E4%BD%93/" rel="tag"># 新媒体</a>
+              <a href="/tags/%E7%A0%94%E7%A9%B6/" rel="tag"># 研究</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/08/08/%E5%A5%BD%E5%93%A5%E5%93%A5%E6%89%93%E6%97%A0%E8%B5%A4/" rel="prev" title="好哥哥打无赤">
+      <i class="fa fa-chevron-left"></i> 好哥哥打无赤
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Week1"><span class="nav-number">1.</span> <span class="nav-text">Week1</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#concept-（概念）"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">concept: （概念）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#construct-（观念，由概念构成）"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">construct: （观念，由概念构成）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#relationship-（关系）"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">relationship: （关系）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#theory-（理论）"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">theory: （理论）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#variable-（变量）"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">variable: （变量）</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hypothesis"><span class="nav-number">1.0.1.</span> <span class="nav-text">hypothesis</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Alternative-H-Ha"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">Alternative H: Ha</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Null-H-H0"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">Null H: H0</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Research-Questions"><span class="nav-number">1.0.2.</span> <span class="nav-text">Research Questions</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-types-of-research-questions"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">3 types of research questions:</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Theory"><span class="nav-number">1.0.3.</span> <span class="nav-text">Theory</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#deductive-演绎法"><span class="nav-number">1.0.3.1.</span> <span class="nav-text">deductive: 演绎法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#inductive-归纳法"><span class="nav-number">1.0.3.2.</span> <span class="nav-text">inductive: 归纳法</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Week2"><span class="nav-number">2.</span> <span class="nav-text">Week2</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Qualitative-Research-Method"><span class="nav-number">2.0.1.</span> <span class="nav-text">Qualitative Research Method</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Quantitative-Methods"><span class="nav-number">2.0.2.</span> <span class="nav-text">Quantitative Methods</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Week3"><span class="nav-number">3.</span> <span class="nav-text">Week3</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Population"><span class="nav-number">3.0.0.1.</span> <span class="nav-text">Population:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Census"><span class="nav-number">3.0.0.2.</span> <span class="nav-text">Census:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#sample"><span class="nav-number">3.0.0.3.</span> <span class="nav-text">sample:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#sampling"><span class="nav-number">3.0.0.4.</span> <span class="nav-text">sampling:</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#non-probability-sampling"><span class="nav-number">3.0.1.</span> <span class="nav-text">non-probability sampling</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Probability-Sampling-Methods"><span class="nav-number">3.0.2.</span> <span class="nav-text">Probability Sampling Methods</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Psyche"
+      src="/uploads/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Psyche</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">31</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">36</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Psyche</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
